@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------
+# Copyright (c) 2001-2021 CALIMLIM Enterprises. All rights reserved.
+#
+# Author: Virgilio B Calimlim, 2021/07
+# ---------------------------------------------------------------------
+# System: Account Authentication (acctauth)
+# ---------------------------------------------------------------------
+
+Configuration on Windows
+
+A. Python Standard Library
+   Python  3.7.4
+
+B. Dependencies
+   1- PyQt5   5.15.1
+   2- pytz    2020.1
+   3- passlib 1.7.4
+
+C. Customization
+
+   1. \acctauth\$settings.bat
+
+      The %PYVEGUI% user environment variable contains the path of the virtual environment where the above dependencies are installed. If the dependencies are installed in the same location where Python is installed, then set this environment variable to the Python library path.
+
+   2. \acctauth\$batdir\$getdirs.bat
+
+      The %PGMFILES% user environment variable contains the path to the top level directory where the program files are installed.
+
+   3. \acctauth\$batdir\$pgmhoms.bat
+
+      The %PYTHON_HOME% user environment variable contains the path to where the Standard Python Library is installed.
+
+D. Data Structure
+
+   This application as packaged stores its encrypted data in a text file. The program can be customized to use a relational database or a non-sql database.
+
+E. Run Application
+
+   1. Execute or double-click pyMenu.bat at the \acctauth folder to bring up the 'Apps Menu' panel.
+   2. Under the Utilities drop-down menu, choose 'pAcctCre' for account creation, then press the Select button.
+   3. On the AcctCre form, fill out the minimum required entries (Userid, 8-alphanum Password, Confirm, Name), then press the Submit button.
+   4. A 'Account successfully created.' message will appear if complete & valid information were given; otherwise, re-enter valid information only or choose to Quit.
+   5. When an account has been successfully created, you may choose to do a Login or Update through the same AcctCre panel or through the 'Apps Menu' panel by selecting 'pAcctLgn' or 'pAcctUpd' respectively.
+   6. For a clean exit, click the Quit button on all panels instead of each panel's close [x] button.
+
+--- End-of-Document ---
